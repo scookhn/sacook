@@ -74,22 +74,6 @@ nav a:hover {
 }
 
 /* =========================
-   SEGUNDO HERO (LIBRO)
-========================= */
-.hero:nth-of-type(2) {
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.2),
-    rgba(0,0,0,0.8)
-  );
-}
-
-.hero:nth-of-type(2) h2 {
-  font-size: 2.4rem;
-  color: #f0c977;
-}
-
-/* =========================
    BOTÓN
 ========================= */
 .btn {
@@ -107,37 +91,9 @@ nav a:hover {
 .btn:hover {
   background-color: #f0c977;
   color: #0a0a0c;
+  box-shadow: 0 0 12px rgba(80, 255, 180, 0.6);
 }
 
-/* =========================
-   FOOTER
-========================= */
-footer {
-  text-align: center;
-  padding: 40px 0;
-  font-size: 0.8rem;
-  color: #777;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 768px) {
-
-  header {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  nav a {
-    margin: 0 10px;
-  }
-
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-}
 /* =========================
    LIBROS
 ========================= */
@@ -157,11 +113,6 @@ footer {
   width: 280px;
   height: auto;
   box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-  transition: transform 0.3s ease;
-}
-
-.book img:hover {
-  transform: scale(1.03);
 }
 
 .book-info {
@@ -181,47 +132,7 @@ footer {
 }
 
 /* =========================
-   BOTÓN MEJORADO
-========================= */
-
-.btn {
-  display: inline-block;
-  padding: 12px 28px;
-  border: 1px solid #f0c977;
-  color: #f0c977;
-  text-decoration: none;
-  letter-spacing: 2px;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-/* HOVER con glow verde cósmico */
-.btn:hover {
-  background-color: #f0c977;
-  color: #0a0a0c;
-  box-shadow: 0 0 12px rgba(80, 255, 180, 0.6);
-}
-
-/* =========================
-   RESPONSIVE LIBROS
-========================= */
-
-@media (max-width: 768px) {
-
-  .book {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .book img {
-    width: 200px;
-  }
-
-}
-/* =========================
-   SOCIAL TOP
+   ICONOS (FIX REAL)
 ========================= */
 
 .social-top {
@@ -229,50 +140,35 @@ footer {
   gap: 15px;
 }
 
-.social-top a {
-  text-decoration: none;
-  color: #d6d1c4;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-}
-
-.social-top a:hover {
-  color: #f0c977;
-}
-
-/* =========================
-   SOCIAL FOOTER
-========================= */
-
 .social-footer {
   margin-bottom: 15px;
 }
 
-.social-footer a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #999;
-  font-size: 0.8rem;
-  transition: all 0.3s ease;
+.social-icon {
+  display: inline-flex;
 }
-
-.social-footer a:hover {
-  color: #f0c977;
-}
-/* =========================
-   ICONOS SVG REDES
-========================= */
 
 .social-icon svg {
   width: 22px;
   height: 22px;
-  fill: #d6d1c4;
+  stroke: #d6d1c4;
+  fill: none;
+  stroke-width: 2;
   transition: all 0.3s ease;
 }
 
 .social-icon:hover svg {
-  fill: #f0c977;
+  stroke: #f0c977;
   transform: scale(1.15);
   filter: drop-shadow(0 0 8px rgba(80,255,180,0.7));
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 0.8rem;
+  color: #777;
 }
