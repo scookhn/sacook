@@ -142,6 +142,9 @@ nav a:hover {
 
 .social-footer {
   margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .social-icon {
