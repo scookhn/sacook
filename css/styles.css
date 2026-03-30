@@ -220,3 +220,43 @@ footer {
   }
 
 }
+/* =========================
+   SOCIAL TOP
+========================= */
+
+.social-top {
+  display: flex;
+  gap: 15px;
+}
+
+.social-top a {
+  text-decoration: none;
+  color: #d6d1c4;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.social-top a:hover {
+  color: #f0c977;
+}
+
+/* =========================
+   SOCIAL FOOTER
+========================= */
+
+.social-footer {
+  margin-bottom: 15px;
+}
+
+.social-footer a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #999;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.social-footer a:hover {
+  color: #f0c977;
+}
