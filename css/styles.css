@@ -265,14 +265,14 @@ footer {
 ========================= */
 
 .social-icon svg {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   fill: #d6d1c4;
   transition: all 0.3s ease;
 }
 
 .social-icon:hover svg {
   fill: #f0c977;
-  transform: scale(1.2);
-  filter: drop-shadow(0 0 6px rgba(80,255,180,0.6));
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 8px rgba(80,255,180,0.7));
 }
