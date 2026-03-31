@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+<script src="https://www.paypal.com/sdk/js?client-id=BAAOdLtDwh9AM7_5yIQuII7P6RVPGeUloXnXGbkznDcj6frPLge4u6zUvKfAN84hY_aZTYlhcTUFWeb48g&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>  
 <head>
   <meta charset="UTF-8">
   <title>S.A. COOK</title>
@@ -45,31 +46,38 @@
 
 <section class="books">
 
-  <div class="book">
-    <img src="assets/images/hartmouth.jpg">
+<div class="book">
+  <img src="assets/images/hartmouth.jpg">
 
-    <div class="book-info">
-      <h2>La Maldición de Hartmouth</h2>
+  <div class="book-info">
+    <h2>La Maldición de Hartmouth</h2>
 
-      <p>
-        Londres, 1973.<br><br>
+    <p>
+      Londres, 1973.<br><br>
 
-        Un coleccionista de libros raros llega a Hartmouth buscando un volumen perdido.<br>
-        Nunca debió encontrarlo.<br><br>
+      Un coleccionista de libros raros llega a Hartmouth buscando un volumen perdido.<br>
+      Nunca debió encontrarlo.<br><br>
 
-        El pueblo no aparece en mapas por accidente.<br>
-        Sus calles húmedas y hoteles decrépitos ocultan algo que ha sobrevivido demasiado tiempo.<br><br>
+      El pueblo no aparece en mapas por accidente.<br>
+      Sus calles húmedas y hoteles decrépitos ocultan algo que ha sobrevivido demasiado tiempo.<br><br>
 
-        Homicidios. Intrigas. Una anciana que no muere.<br>
-        Y un libro que no debería existir.<br><br>
+      Homicidios. Intrigas. Una anciana que no muere.<br>
+      Y un libro que no debería existir.<br><br>
 
-        Porque en Hartmouth no todo lo que se vende puede comprarse.<br>
-        Y hay deudas antiguas que siempre se pagan.
-      </p>
+      Porque en Hartmouth no todo lo que se vende puede comprarse.<br>
+      Y hay deudas antiguas que siempre se pagan.
+    </p>
 
-      <a href="#" class="btn">Comprar $0.99</a>
-    </div>
+    <!-- BOTÓN PAYPAL -->
+    <div id="paypal-container-96ADF727QPKEU"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "96ADF727QPKEU"
+      }).render("#paypal-container-96ADF727QPKEU");
+    </script>
+
   </div>
+</div>
 
   <div class="book">
     <img src="assets/images/kali-naku.jpg">
